@@ -1,5 +1,5 @@
 # TimezUp
-A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It featurs your Local-Time, a stopwatch and a timer. It is very simple and doesn't feature any further possibilities than necessary.
+A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It featurs your Local-Time, a stopwatch and a timer. It is very simple and doesn't include any further possibilities than necessary.
 
 # Included Features
 - your local time
