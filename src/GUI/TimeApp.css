@@ -1,0 +1,72 @@
+.button {
+	-fx-border-radius: 20;
+	-fx-background-radius: 20;
+	
+	-fx-background-color: #251e1e;
+	-fx-border-color:  linear-gradient(from 20% 20% to 100% 100%,  #680404, #f24d4d);
+	-fx-border-width: 2;
+}
+
+.button:hover {
+	-fx-border-color: #f24d4d;
+}
+
+.button:pressed {
+	-fx-border-color: white;
+}
+
+.tab {
+	-fx-background-color:#251e1e;
+	-fx-font-family: Autumn;
+	-fx-text-fill: white;
+	
+    -fx-pref-width: 195;
+} 
+
+.tab .tab-label {
+	-fx-font-size: 17;
+	-fx-text-fill: white;
+	
+    -fx-pref-width: 195;
+} 
+
+.tab:selected {
+    -fx-background-color:  linear-gradient(from 5% 5% to 100% 100%,  #680404, #f24d4d);
+    -fx-focus-color: transparent;
+}
+
+.tab-header-background {
+    -fx-background-color:transparent
+}
+
+.tab-pane{
+	-fx-padding: 0 -1 -1 -1;
+}
+
+.spinner {
+	-fx-border-radius: 4;
+	-fx-background-radius: 4;
+	
+	-fx-background-color: #251e1e;
+	-fx-border-color:  linear-gradient(from 20% 20% to 100% 100%,  #680404, #f24d4d);
+	-fx-border-width: 2;
+	
+	-fx-focus-color: transparent;
+}
+
+.spinner .text-field {
+	-fx-background-color: #251e1e;
+	-fx-text-fill: white;
+	-fx-font-family: Autumn;
+	-fx-alignment: CENTER;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+	-fx-background-color:  #3a3a3a;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+	-fx-background-color:  #5d5d5e;
+}

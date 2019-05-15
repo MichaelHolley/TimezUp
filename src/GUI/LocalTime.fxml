@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3a3a3a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LocalTimeController">
+	<children>
+		<TabPane layoutY="75.0" prefHeight="325.0" prefWidth="600.0" stylesheets="@TimeApp.css" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab closable="false" text="Local-Time">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<Label alignment="CENTER" layoutX="211.0" layoutY="87.0" text="Your local Time:" textAlignment="CENTER" textFill="#d13030">
+									<font>
+										<Font name="Autumn Regular" size="28.0" />
+									</font>
+								</Label>
+								<Label fx:id="localTimeLabel" alignment="CENTER" layoutX="216.0" layoutY="131.0" prefHeight="53.0" prefWidth="170.0" style="-fx-border-color: linear-gradient(from 20% 20% to 100% 100%,  #680404, #f24d4d); -fx-border-radius: 20; -fx-border-width: 3;" text="00:00:00" textAlignment="CENTER" textFill="#251e1e">
+									<font>
+										<Font name="Autumn Regular" size="40.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab closable="false" text="Stopwatch">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<Button fx:id="stopwatchButton" layoutX="244.0" layoutY="149.0" mnemonicParsing="false" onAction="#stopwatchButtonAction" prefHeight="35.0" prefWidth="115.0" stylesheets="@TimeApp.css" text="Start" textFill="WHITE">
+									<font>
+										<Font name="Autumn Regular" size="20.0" />
+									</font>
+								</Button>
+								<Label fx:id="stopwatchLabel" alignment="CENTER" layoutX="217.0" layoutY="75.0" prefHeight="53.0" prefWidth="170.0" style="-fx-border-color: linear-gradient(from 20% 20% to 100% 100%,  #680404, #f24d4d); -fx-border-radius: 20; -fx-border-width: 3;" text="00:00:00" textAlignment="CENTER" textFill="#251e1e">
+									<font>
+										<Font name="Autumn Regular" size="40.0" />
+									</font>
+								</Label>
+								<Button fx:id="stopwatchResetButton" layoutX="244.0" layoutY="209.0" mnemonicParsing="false" onAction="#stopwatchResetButtonAction" prefHeight="35.0" prefWidth="115.0" stylesheets="@TimeApp.css" text="Reset" textFill="WHITE">
+									<font>
+										<Font name="Autumn Regular" size="20.0" />
+									</font>
+								</Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab closable="false" text="Timer">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<GridPane alignment="CENTER" layoutX="1.0" layoutY="22.0" prefHeight="60.0" prefWidth="600.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<Label alignment="CENTER" text="Hours:" textFill="#d13030">
+											<font>
+												<Font name="Autumn Regular" size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutX="92.0" layoutY="14.0" text="Minutes:" textFill="#d13030" GridPane.columnIndex="1">
+											<font>
+												<Font name="Autumn Regular" size="18.0" />
+											</font>
+										</Label>
+										<Label alignment="CENTER" layoutX="292.0" layoutY="14.0" text="Seconds:" textFill="#d13030" GridPane.columnIndex="2">
+											<font>
+												<Font name="Autumn Regular" size="18.0" />
+											</font>
+										</Label>
+										<Spinner fx:id="hoursSpinner" editable="true" prefHeight="25.0" prefWidth="75.0" stylesheets="@TimeApp.css" GridPane.rowIndex="1">
+										</Spinner>
+										<Spinner fx:id="minutesSpinner" editable="true" layoutX="73.0" layoutY="43.0" prefHeight="25.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+										</Spinner>
+										<Spinner fx:id="secondsSpinner" editable="true" layoutX="273.0" layoutY="43.0" prefHeight="25.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+										</Spinner>
+									</children>
+								</GridPane>
+								<Button fx:id="timerStartButton" layoutX="244.0" layoutY="203.0" mnemonicParsing="false" onAction="#timerStartButtonAction" prefHeight="35.0" prefWidth="115.0" stylesheets="@TimeApp.css" text="Start" textFill="WHITE">
+									<font>
+										<Font name="Autumn Regular" size="20.0" />
+									</font>
+								</Button>
+								<Label fx:id="timerLabel" alignment="CENTER" layoutX="216.0" layoutY="120.0" prefHeight="53.0" prefWidth="170.0" style="-fx-border-color: linear-gradient(from 20% 20% to 100% 100%,  #680404, #f24d4d); -fx-border-radius: 20; -fx-border-width: 3;" text="00:00:00" textAlignment="CENTER" textFill="#251e1e">
+									<font>
+										<Font name="Autumn Regular" size="40.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+		<AnchorPane prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 5% 5% to 100% 100%,  #680404, #f24d4d);" stylesheets="@TimeApp.css">
+			<children>
+				<Label alignment="CENTER" layoutX="225.0" layoutY="11.0" prefHeight="53.0" prefWidth="150.0" style="-fx-border-radius: 20; -fx-border-color: #3a3a3a; -fx-border-width: 3;" text="TimezUp" textAlignment="CENTER" textFill="#3a3a3a">
+					<font>
+						<Font name="Autumn Regular" size="38.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>
