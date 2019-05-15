@@ -6,6 +6,7 @@ A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It featurs your L
 - Stopwatch with Start/Stop and Reset-Button
 - Timer in HH:MM:SS
 - easy to use UI
+- CSS-Stylesheet
 
 # Possible future Features
 - Get time by timezone (Select Region)
