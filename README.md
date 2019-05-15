@@ -4,7 +4,7 @@ A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It featurs your L
 # Included Features
 - your local time
 - Stopwatch with Start/Stop and Reset-Button
-- a Timer
+- Timer in HH:MM:SS
 
 # Possible future Features
 - Get time by timezone (Select Region)
