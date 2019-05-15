@@ -19,4 +19,4 @@ It is possible that errors occure with the font I used. I included it in the fil
 You can get the font [here](https://fontzone.net/font-details/autumn-regular "Autumn-Font").
 
 Also I have a unfixed error with resisizing the window.
--> window.setResizable(true) changed the whole layout of my applet
+-> window.setResizable(false) changed the whole layout of my applet
