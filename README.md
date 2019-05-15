@@ -13,3 +13,7 @@ A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It featurs your L
 - Calendar
 - history of the last stopwatch times
 - stopwatch-continue-button
+
+### Disclaimer
+It is possible that errors occure with the font I used. I included it in the files, but this way sometimes doesn't work very well.
+You can get the font [Autumn-Font](https://fontzone.net/font-details/autumn-regular "here")
