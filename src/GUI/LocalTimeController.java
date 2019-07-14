@@ -84,11 +84,12 @@ public class LocalTimeController implements Initializable {
 		if(timerRunning == true) {
 			timerInSeconds = secondsSpinner.getValue() + minutesSpinner.getValue() * 60 + hoursSpinner.getValue() * 3600;
 			timerTimeline = new Timeline(new KeyFrame(Duration.millis(1000), event -> {
-				timerInSeconds--;
-				if(timerInSeconds == 0) {
+				if(timerInSeconds <= 0) {
 					timerTimeline.stop();
 					timerRunning = false;
 					timerStartButton.setText("Start");
+				} else {
+					timerInSeconds--;
 				}
 				int secondsTimer = (int) (timerInSeconds % 60);
 		    	int minutesTimer = ((int) (timerInSeconds / 60)) % 60;
