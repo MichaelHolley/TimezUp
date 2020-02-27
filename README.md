@@ -15,9 +15,6 @@ A JavaFX-TimeApp which is comparable to Smartphone-Clock-Apps. It features your 
 - history of the last stopwatch times
 - stopwatch-continue-button
 
-### Disclaimer
-It is possible that errors occure with the font I used. I included it in the files, but this way doesn't work without problems.
-You can get the font [here](https://fontzone.net/font-details/autumn-regular "Autumn-Font").
-
-I have a unfixed error with resisizing the window.
+# Known Errors
+I have a unfixed error when resizing the window
 -> window.setResizable(false) changed the whole layout of my applet
