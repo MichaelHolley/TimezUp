@@ -20,15 +20,13 @@ public class TimeApp extends Application {
 		stage.setTitle("Debt-Manager");
 		stage.setScene(new Scene(root, 600, 400));
 		stage.show();
+
+		stage.widthProperty().addListener((obs, oldVal, newVal) -> {
+			stage.setWidth(600);
+		});
+
+		stage.heightProperty().addListener((obs, oldVal, newVal) -> {
+			stage.setHeight(400);
+		});
 	}
-	
-	
-
-	stage.widthProperty().addListener((obs, oldVal, newVal) -> {
-		stage.setWidth(600);
-	});
-
-	stage.heightProperty().addListener((obs, oldVal, newVal) -> {
-		stage.setHeight(400);
-	});
 }
